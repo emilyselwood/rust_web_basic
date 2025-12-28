@@ -1,0 +1,2 @@
+https://github.com/CatharsisFonts/Cormorant/raw/master/fonts/ttf/Cormorant-Light.ttf
+https://github.com/NDISCOVER/Cinzel/raw/master/fonts/ttf/Cinzel-Regular.ttf
