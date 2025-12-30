@@ -1,8 +1,6 @@
 use std::fs;
 use std::path::PathBuf;
 
-use log::info;
-
 use crate::APPLICATION_NAME;
 
 pub fn data_dir() -> PathBuf {
