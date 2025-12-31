@@ -24,7 +24,7 @@ mod error;
 mod server;
 mod utils;
 
-const APPLICATION_NAME: &str = "multi_party";
+const APPLICATION_NAME: &str = env!("CARGO_PKG_NAME");
 
 #[tokio::main]
 async fn main() {

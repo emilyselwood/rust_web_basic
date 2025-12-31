@@ -40,6 +40,8 @@ impl Config {
             return Ok(config);
         }
 
+        println!("loading config from {:?}", &config_path);
+
         let file_content = fs::read_to_string(&config_path)
             .with_context(|| format!("Could not open config file at {:?}", &config_path))?;
         let config: Config =

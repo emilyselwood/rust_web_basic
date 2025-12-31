@@ -1,5 +1,5 @@
 [package]
-name = "multi_party"
+name = "rust_web_template"
 version = "0.1.0"
 edition = "2024"
 
