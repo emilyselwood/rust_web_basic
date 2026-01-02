@@ -6,7 +6,7 @@ use actix_web::{App, HttpRequest, HttpServer, Result, cookie::Key, middleware::L
 use anyhow::{Context, Error, anyhow};
 use log::{debug, info};
 
-use crate::{config::Config, error::WebError};
+use crate::{api::build_api, config::Config, error::WebError};
 
 pub struct AppData {
     config: Config,
@@ -39,6 +39,8 @@ pub async fn server_main(settings: &Config) -> Result<(), Error> {
                 secret_key.clone(),
             ))
             .app_data(web_data.clone())
+            // attach the api to this.
+            .service(build_api())
             // General file routes. images, css, fonts, and javascript
             .route(
                 "/img/{filename:.*\\.(jpg|png|webp|gif)}",

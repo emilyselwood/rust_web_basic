@@ -20,10 +20,10 @@ Really basic project starting point.
 
 ## Project layout.
 
-The configuration objects are in `src/config.rs` All the existing entries are in use but 
+The configuration objects are in `src/config.rs` All the existing entries are in use.
 
 Logging config is mostly hard coded in `src/main.rs` The defaults should keep you going for a long while.
 
 Static resources (html, js, images, fonts, css, etc) are kept in `resources/static`. The `open` folder is designed for things that are not security sensitive and can be loaded by anyone. Paths to these folders are built in the handler functions near the bottom of `src/server.rs` Note: currently there is no secure section because it is not setup at all out of the box.
 
-End points are configured in `src/server.rs`
+End points are configured in `src/server.rs` an api stub has been created in `src/api/mod.rs`

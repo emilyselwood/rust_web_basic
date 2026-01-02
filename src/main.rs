@@ -19,6 +19,7 @@ use log4rs::{
 
 use crate::{config::Config, server::server_main};
 
+mod api;
 mod config;
 mod error;
 mod server;
